@@ -1,0 +1,70 @@
+/* TaskFlow — Базовые стили */
+
+:root {
+    --tf-bg-body: #f8fafc;
+    --tf-card-bg: #ffffff;
+    --tf-border-color: #e2e8f0;
+    --tf-text-main: #1e293b;
+    --tf-text-muted: #64748b;
+    --tf-primary: #3b82f6;
+    --tf-primary-hover: #2563eb;
+    --tf-navbar-bg: #ffffff;
+}
+
+body {
+    background-color: var(--tf-bg-body);
+    color: var(--tf-text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Навигационная панель */
+.navbar-taskflow {
+    background-color: var(--tf-navbar-bg);
+    border-bottom: 1px solid var(--tf-border-color);
+}
+
+.navbar-taskflow .navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.navbar-taskflow .navbar-brand span {
+    color: var(--tf-primary);
+}
+
+/* Карточки и контейнеры */
+.tf-card {
+    background-color: var(--tf-card-bg);
+    border: 1px solid var(--tf-border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+/* Заготовка списка задач */
+.tf-placeholder-box {
+    border: 2px dashed var(--tf-border-color);
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.tf-placeholder-icon {
+    font-size: 2.5rem;
+    color: var(--tf-text-muted);
+    margin-bottom: 1rem;
+}
+
+/* Футер */
+.tf-footer {
+    margin-top: auto;
+    border-top: 1px solid var(--tf-border-color);
+    background-color: #ffffff;
+    color: var(--tf-text-muted);
+    font-size: 0.875rem;
+}
